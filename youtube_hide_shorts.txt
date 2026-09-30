@@ -1,0 +1,15 @@
+youtube.com##ytd-rich-section-renderer
+youtube.com##ytd-rich-section-renderer:has(#title-container:has-text(Most relevant))
+youtube.com##ytd-rich-section-renderer:has-text(Aktualiausia)
+
+! Hide Shorts everywhere
+www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##ytd-guide-entry-renderer a[href='/shorts/']:upward(ytd-guide-entry-renderer)
+www.youtube.com##a[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+www.youtube.com##a[href^="/shorts/"]:upward(ytd-grid-video-renderer)
+www.youtube.com##a[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##a[href^="/shorts/"]:upward(ytd-compact-video-renderer)
+www.youtube.com##ytd-rich-item-renderer:has(a[href*="/shorts/"])
+www.youtube.com##ytd-guide-entry-renderer:has(a[title="Shorts"])
+www.youtube.com##ytd-mini-guide-entry-renderer:has(a[title="Shorts"])
